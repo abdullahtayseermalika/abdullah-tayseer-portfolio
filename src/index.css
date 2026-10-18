@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bg-primary: #08080C;
+    --color-bg-secondary: #111019;
+    --color-card-bg: #171420;
+    --color-deep-purple: #6D28D9;
+    --color-electric-violet: #8B5CF6;
+    --color-neon-lavender: #A78BFA;
+    --color-crimson-red: #E11D48;
+    --color-bright-red: #FF304F;
+    --color-text-primary: #F5F3FF;
+    --color-text-muted: #AAA5B8;
+    --color-border: #302238;
+  }
+
+  body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+.font-bebas {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.font-heading {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-hand {
+  font-family: 'Caveat', cursive;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Purple & Crimson glow effects */
+.glow-purple-sm {
+  box-shadow: 0 0 16px -2px rgba(139, 92, 246, 0.35);
+}
+
+.glow-purple-lg {
+  box-shadow: 0 0 45px -5px rgba(109, 40, 217, 0.45);
+}
+
+.glow-crimson-sm {
+  box-shadow: 0 0 16px -2px rgba(225, 29, 72, 0.35);
+}
+
+.glow-crimson-lg {
+  box-shadow: 0 0 45px -5px rgba(225, 29, 72, 0.45);
+}
+
+.glow-text-purple {
+  text-shadow: 0 0 24px rgba(167, 139, 250, 0.65);
+}
+
+.glow-text-crimson {
+  text-shadow: 0 0 24px rgba(225, 29, 72, 0.65);
+}
+
+.gradient-purple-crimson {
+  background: linear-gradient(135deg, #6D28D9 0%, #8B5CF6 30%, #E11D48 70%, #9F1239 100%);
+}
+
+.gradient-hero-cinematic {
+  background: radial-gradient(circle at 75% 30%, rgba(139, 92, 246, 0.9) 0%, rgba(109, 40, 217, 0.85) 30%, rgba(225, 29, 72, 0.75) 60%, rgba(159, 18, 57, 0.85) 85%, rgba(8, 8, 12, 0.98) 100%);
+}
+
+/* Subtle grid texture */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(167, 139, 250, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(225, 29, 72, 0.03) 1px, transparent 1px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #08080C;
+}
+::-webkit-scrollbar-thumb {
+  background: #302238;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8B5CF6;
+}
