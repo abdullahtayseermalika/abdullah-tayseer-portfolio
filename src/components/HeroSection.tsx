@@ -13,7 +13,7 @@ import {
   clearPortraitPhoto,
 } from '../utils/photoStorage';
 
-const DEFAULT_PORTRAIT_URL = '/images/abdullah-tayseer.jpg';
+const DEFAULT_PORTRAIT_URL = 'https://raw.githubusercontent.com/abdullahtayseermalika/abdullah-tayseer-portfolio/main/profile%20pic.jpeg';
 
 export const HeroSection: React.FC = () => {
   const [photoUrl, setPhotoUrl] = useState<string | null>(null);
